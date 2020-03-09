@@ -3,5 +3,7 @@ FROM securego/gosec:v2.2.0@sha256:24b86f5c1d599672f861c1b10c14fa00ff1006974b040d
 WORKDIR  /tmp/repository
 COPY . .
 
+RUN chmod +x entrypoint.sh
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+
+ENTRYPOINT [ "entrypoint.sh" ]
