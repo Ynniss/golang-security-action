@@ -11,4 +11,4 @@
 #     gosec -conf $CONF_PATH
 # fi
 
-gosec
+gosec test.go
