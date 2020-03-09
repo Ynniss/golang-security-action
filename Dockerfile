@@ -4,4 +4,4 @@ WORKDIR  /tmp/repository
 COPY . .
 
 
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
