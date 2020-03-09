@@ -1,1 +1,1 @@
-# golang-audit-action
+# golang-security-action
