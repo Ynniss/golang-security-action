@@ -1,0 +1,19 @@
+name: "golang-audit-action"
+description: "run gosec within github, on specific events like push or pull request"
+author: "Ynniss"
+
+inputs:
+  CONF_PATH:
+    description: "gosec conf path that will be used"
+    required: false
+  CODE_PATH:
+    description: "path to the code that will be analyzed (please specify a relative path, starting from the repository)"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
