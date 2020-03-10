@@ -10,4 +10,4 @@ jobs:
             - uses: ./
               with:
                 CODE_PATH: "."
-                CONF_PATH: "/tmp/toto"
+                CONF_PATH: "./gosec-test-conf.json"
