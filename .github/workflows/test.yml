@@ -9,4 +9,5 @@ jobs:
             - uses: actions/checkout@v1
             - uses: ./
               with:
-                CODE_PATH: "/"
+                CODE_PATH: "."
+                CONF_PATH: "/tmp/toto"
