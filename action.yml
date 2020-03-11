@@ -7,8 +7,8 @@ inputs:
     description: "gosec conf path that will be used"
     required: false
   CODE_PATH:
-    description: "path to the code that will be analyzed (please specify a relative path, starting from the repository)"
-    required: false
+    description: "path to the code that will be analyzed"
+    required: true
 
 runs:
   using: "docker"
