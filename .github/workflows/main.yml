@@ -6,7 +6,7 @@ jobs:
     golang-security-action:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v1
+            - uses: actions/checkout@v2
             - uses: ynniss/golang-security-action@v0.1.0-rc
               with:
                 CODE_PATH: "."
