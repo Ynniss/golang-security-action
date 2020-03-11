@@ -1,9 +1,9 @@
-name: Test golang-security-action
+name: Sample workflow using golang-security-action
 
-on: [push]
+on: []
 
 jobs:
-    golang-security:
+    golang-security-action:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
