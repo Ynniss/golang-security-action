@@ -1,5 +1,5 @@
-name: "golang-audit-action"
-description: "run gosec within github, on specific events like push or pull request"
+name: "golang-security-action"
+description: "Run gosec and scan your golang code, on specific events like push or pull request"
 author: "Ynniss"
 
 inputs:
@@ -15,5 +15,5 @@ runs:
   image: "Dockerfile"
 
 branding:
-  icon: "mic"
-  color: "purple"
+  icon: "eye"
+  color: "gray-dark"
