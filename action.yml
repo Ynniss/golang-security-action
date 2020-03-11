@@ -8,7 +8,7 @@ inputs:
     required: false
   CODE_PATH:
     description: "path to the code that will be analyzed (please specify a relative path, starting from the repository)"
-    required: true
+    required: false
 
 runs:
   using: "docker"
