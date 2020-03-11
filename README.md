@@ -20,7 +20,7 @@ Here is the inputs that can be added on your workflow file
 
 ## Workflow sample
 
-```
+```yaml
 name: Sample workflow using golang-security-action
 
 on: [push pull_request]
