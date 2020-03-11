@@ -1,5 +1,4 @@
 # golang-security-action
-<<<<<<< HEAD
 
 ## What is it ?
 
@@ -44,5 +43,3 @@ Any PR will be appreciated :) !
 This project is using [MIT License](https://github.com/Ynniss/golang-security-action/blob/master/LICENSE).
 
 golang-security-action is using [**gosec**](https://github.com/securego/gosec), which is licensed under [Apache License 2.0](https://github.com/securego/gosec/blob/master/LICENSE.txt)
-=======
->>>>>>> origin/master
