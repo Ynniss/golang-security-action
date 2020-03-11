@@ -16,11 +16,28 @@ Here is the inputs that can be added on your workflow file
 | CODE_PATH     | **true**      | used to specify "where" gosec will look at |
 | CONF_PATH     | **false**     | referring to the path of the gosec config file|
 
-**WIP** (see  [entrypoint.sh](https://github.com/Ynniss/golang-security-action/blob/master/entrypoint.sh) )
+**If CONF_PATH is not specified, the action will juste run gosec with the path provided.** (see  [entrypoint.sh](https://github.com/Ynniss/golang-security-action/blob/master/entrypoint.sh) )
+
+## Workflow sample
+
+```
+name: Sample workflow using golang-security-action
+
+on: [push pull_request]
+
+jobs:
+    golang-security-action:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+            - uses: ynniss/golang-security-action@latest
+              with:
+                CODE_PATH: "."
+```
 
 ## Contribute
 
-Any PR will be appreciated :) ! 
+Any PR will be appreciated :) !
 
 ## License
 This project is using [MIT License](https://github.com/Ynniss/golang-security-action/blob/master/LICENSE).
