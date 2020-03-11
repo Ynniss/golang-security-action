@@ -4,7 +4,7 @@ author: "Ynniss"
 
 inputs:
   CONF_PATH:
-    description: "gosec conf path that will be used"
+    description: "path to the config file gosec will use"
     required: false
   CODE_PATH:
     description: "path to the code that will be analyzed"
