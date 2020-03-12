@@ -13,7 +13,7 @@ Here is the inputs that can be added on your workflow file
 
 | Input name    | Required      | Default value | Description |
 | ------------- | ------------- |---------------|-------------|
-| CODE_PATH     | **true**      |      "./src"        | used to specify "where" gosec will look at |
+| CODE_PATH     | **true**      |      "."        | used to specify "where" gosec will look at |
 | CONF_PATH     | **false**     | **No default value** | referring to the path of the gosec config file |
 
 If `CONF_PATH` is not specified, **the action will just run gosec with the path provided**. (see  [entrypoint.sh](https://github.com/Ynniss/golang-security-action/blob/master/entrypoint.sh) )
@@ -32,7 +32,7 @@ jobs:
             - uses: actions/checkout@v1
             - uses: ynniss/golang-security-action@master
               with:
-                CODE_PATH: "."
+                CODE_PATH: "./src/"
 ```
 
 ## Contribute
