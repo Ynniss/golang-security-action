@@ -9,6 +9,7 @@ inputs:
   CODE_PATH:
     description: "path to the code that will be analyzed"
     required: true
+    default: "."
 
 runs:
   using: "docker"
