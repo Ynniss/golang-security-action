@@ -30,7 +30,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
-            - uses: ynniss/golang-security-action@v0.1.0
+            - uses: ynniss/golang-security-action@master
               with:
                 CODE_PATH: "."
 ```
