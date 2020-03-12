@@ -11,12 +11,12 @@ golang-security-action is nothing more than a github action letting you run [gos
 
 Here is the inputs that can be added on your workflow file
 
-| Input name    | Required      | Description |
-| ------------- | ------------- |-------------|
-| CODE_PATH     | **true**      | used to specify "where" gosec will look at |
-| CONF_PATH     | **false**     | referring to the path of the gosec config file|
+| Input name    | Required      | Default value | Description |
+| ------------- | ------------- |---------------|-------------|
+| CODE_PATH     | **true**      |      "."        | used to specify "where" gosec will look at |
+| CONF_PATH     | **false**     | **No default value** | referring to the path of the gosec config file |
 
-**If CONF_PATH is not specified, the action will juste run gosec with the path provided.** (see  [entrypoint.sh](https://github.com/Ynniss/golang-security-action/blob/master/entrypoint.sh) )
+If `CONF_PATH` is not specified, **the action will just run gosec with the path provided**. (see  [entrypoint.sh](https://github.com/Ynniss/golang-security-action/blob/master/entrypoint.sh) )
 
 ## Workflow sample
 
@@ -30,7 +30,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
-            - uses: ynniss/golang-security-action@latest
+            - uses: ynniss/golang-security-action@v0.1.0
               with:
                 CODE_PATH: "."
 ```
