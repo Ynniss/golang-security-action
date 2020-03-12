@@ -23,7 +23,7 @@ If `CONF_PATH` is not specified, **the action will just run gosec with the path 
 ```yaml
 name: Sample workflow using golang-security-action
 
-on: [push pull_request]
+on: [push, pull_request]
 
 jobs:
     golang-security-action:
